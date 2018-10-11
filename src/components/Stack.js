@@ -8,7 +8,7 @@ class Stack extends PureComponent {
         const { title, cards } = this.props.stack;
         return (
             <div>
-            <Link to='/'>Home</Link>
+            <Link className='link-home' to='/'>Home</Link>
                 <h3>{title}</h3>
                 <br />
                 {
