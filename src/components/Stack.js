@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Card from './Card';
 
 class Stack extends PureComponent {
     render() {
@@ -13,10 +14,7 @@ class Stack extends PureComponent {
                 {
                     cards.map( (card) => {
                         return (
-                            <div key={card.id}>
-                                <span>Prompt: {card.prompt}. </span>
-                                <span>Answer: {card.answer}. </span>
-                            </div>
+                            <Card key={card.id} card={card} />
                         );
                     })
                 }
