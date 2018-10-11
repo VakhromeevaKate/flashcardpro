@@ -14,8 +14,8 @@ class Stack extends PureComponent {
                     cards.map( (card) => {
                         return (
                             <div key={card.id}>
-                                <div>{card.prompt}</div>
-                                <div>{card.answer}</div>
+                                <span>Prompt: {card.prompt}. </span>
+                                <span>Answer: {card.answer}. </span>
                             </div>
                         );
                     })
