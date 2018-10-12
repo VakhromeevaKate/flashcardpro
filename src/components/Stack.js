@@ -6,6 +6,7 @@ import Card from './Card';
 class Stack extends PureComponent {
     render() {
         const { title, cards } = this.props.stack;
+
         return (
             <div>
                 <Link className='link-home' to='/'>Home</Link>
