@@ -16,20 +16,29 @@ body {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    text-align: left;
 }
 
 .card-propmt {
     display: inline-block;
     text-align: left;
-    width: 70%;
+    width: 50%;
 }
 
 .card-answer {
     display: inline-block;
     text-align: right;
-    width: 30%;
+    width: fit-content;
 }
 
 .text-hidden {
+    display: inline-block;
+    width: 20%;
     visibility: hidden;
+}
+
+.without-answer {
+    display: inline-block;
+    text-align: left;
+    width: fit-content;
 }
