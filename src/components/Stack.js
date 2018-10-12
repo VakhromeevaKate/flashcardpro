@@ -8,11 +8,11 @@ class Stack extends PureComponent {
         const { title, cards } = this.props.stack;
         return (
             <div>
-            <Link className='link-home' to='/'>Home</Link>
+                <Link className='link-home' to='/'>Home</Link>
                 <h3>{title}</h3>
                 <br />
                 {
-                    cards.map( (card) => {
+                    cards.map((card) => {
                         return (
                             <Card key={card.id} card={card} />
                         );
@@ -24,7 +24,7 @@ class Stack extends PureComponent {
 }
 
 function mapStateToProps(state) {
-    return { stack: state.stack};
+    return { stack: state.stack };
 }
 
 export default connect(mapStateToProps, null)(Stack);

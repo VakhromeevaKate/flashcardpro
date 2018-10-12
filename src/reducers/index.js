@@ -1,5 +1,5 @@
 import { SET_STACK } from '../actions';
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 
 function stack(state = {}, action) {
     switch (action.type) {

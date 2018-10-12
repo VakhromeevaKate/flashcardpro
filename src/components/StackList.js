@@ -11,8 +11,8 @@ class StackList extends PureComponent {
                 {
                     stacks.map(stack => {
                         return (
-                            <Link 
-                                to='/stack' 
+                            <Link
+                                to='/stack'
                                 key={stack.id}
                                 onClick={() => this.props.setStack(stack)}
                             >

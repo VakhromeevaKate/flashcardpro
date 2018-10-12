@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 import App from './components/App';
 import Stack from './components/Stack';
@@ -10,8 +10,8 @@ import { setStack } from './actions';
 import './index.css';
 
 const store = createStore(rootReducer);
-store.subscribe(() => console.log('store', store.getState()));
-store.dispatch(setStack({ id:0, title: 'testing example', cards: []}))
+store.subscribe(() => {});
+store.dispatch(setStack({ id: 0, title: 'testing example', cards: [] }));
 
 ReactDOM.render(
     <Provider store={store}>
@@ -21,6 +21,6 @@ ReactDOM.render(
                 <Route path='/stack' component={Stack}></Route>
             </Switch>
         </BrowserRouter>
-    </Provider>, 
+    </Provider>,
     document.getElementById('root')
 );
